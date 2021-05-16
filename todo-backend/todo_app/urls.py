@@ -4,12 +4,12 @@ from .views import home
 from rest_framework import routers
 
 from django.urls import path, include
-from .views import TodoViewSet,CategoryViewSet, TodoList
+from .views import TodoViewSet,CategoryViewSet
 
 
 router = routers.DefaultRouter()
 router.register('todo', TodoViewSet)
-router.register('user-todo',TodoList)
+# router.register('user-todo',TodoList)
 router.register('category', CategoryViewSet)
 
 urlpatterns = [

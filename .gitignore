@@ -11,7 +11,9 @@
 
 # production
 /build
-
+/__pycache__
+/migrations
+db.sqlite3
 # misc
 .DS_Store
 .env.local
