@@ -12,7 +12,7 @@ class Category(models.Model):
 class Todo(models.Model):
     task = models.CharField(max_length=500)
     category = models.ForeignKey(Category,on_delete=CASCADE)
-    schedule_time = models.DateTimeField(auto_now_add=True,null=True)
+    #schedule_time = models.DateTimeField(auto_now_add=True,null=True)
     created_time = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
