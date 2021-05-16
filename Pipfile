@@ -8,6 +8,9 @@ django = "*"
 djangorestframework = "*"
 knox = "*"
 django-rest-knox = "*"
+jinja2 = "*"
+boto3 = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 

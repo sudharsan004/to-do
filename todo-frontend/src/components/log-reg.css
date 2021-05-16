@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+body{
+    background-image: linear-gradient(to right,#2589FE,#32B1FE);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.card{
+    padding: 40px;
+    outline: none ;
+    border: none ;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 40%;
+    transform: translate(-50%,-50%);
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.2rem;
+    user-select: none;
+}
+h1{
+    font-family: 'Ubuntu',sans-serif;
+    color: #4a9bf7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 10px #2054ff5d;
+}
+label{
+    color: #5a5a5a;
+    letter-spacing: .3px;
+    margin-bottom: 5px !important;
+}
+input{
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 1.5px solid #797979 !important;
+    border-radius: 0px !important;
+    padding:0 !important;
+    font-size: 1.1rem !important;
+    color: #777777 !important;
+}
+input::placeholder{
+    color: #aaaaaa !important;
+    letter-spacing: .2px;
+    font-size: 1rem !important;
+}
+input:focus{
+    box-shadow: none !important;
+    border-bottom: 1.5px solid #4098fd !important;
+}
+.btn{
+    background-color: #DEEDF6;
+    color: #4098fd;
+    letter-spacing: 1.2px;
+    font-weight: bolder;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    margin-top: 10px;
+    padding:10px;
+    font-size: 1.1rem;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 25px;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 1.2rem;
+    width: 7rem;
+    transition: width .3s ease-in-out;
+    text-shadow: 2px 2px 10px #2054ff5d;
+}
+.btn:hover,.btn:active{
+    width: 9rem;
+    background-color: #DEEDF6 !important;
+    color: #4098fd !important;
+}
+.btn:focus{
+    width: 9rem;
+    background-color: #DEEDF6 !important;
+    color: #50a1ec !important;
+    box-shadow: 5px 8px 20px rgba(0, 47, 255, 0.11) !important;
+}
+a{
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #4098fd;
+    letter-spacing: .5px;
+}
+a:hover{
+    color: #238aff;
+}
+
+
+
+                        /* *****MEDIA QUERIES***** */
+
+/* MEDIA QUERIES FOR MAINTAINING THE WIDTH OF THE CARD FOR ALL DEVICES */
+                @media screen and (max-width:501px){
+                    .card{
+                        width: 90% !important;
+                    }
+                }
+                @media screen and (min-width:500px) and (max-width:1024px){
+                    .card{
+                        width: 70% !important;
+                    }
+                }
